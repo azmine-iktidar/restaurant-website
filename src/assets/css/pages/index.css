@@ -1,0 +1,164 @@
+.dzFormMsg, .dzSubscribeMsg {
+    position: fixed;
+    right: 5%;
+    bottom: 20px;
+    z-index: 9999999;
+}
+.dzFormMsg .alert, .dzSubscribeMsg .alert {
+    margin: 0;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.custom-react-select{
+	.css-1dimb5e-singleValue{
+		color: #fff !important;
+		font-size: 1.125rem;
+	}
+    /* color: #fff; */
+	/* color: #000; */
+	& > div:nth-child(4){        
+        & > div{            
+            /* background-color: #fff; */
+			/* color: #000; */
+			& > div{
+				background-color: transparent;
+                color: #fff;
+				cursor: pointer;
+				/* @include transitionMedium; */
+				&:hover{
+					background-color: var(--primary);
+					color: #fff;
+                    /* font-size: 14px; */
+				}
+				&:focus{
+					/* background-color: var(--primary); */
+					/* color: #fff; */
+                    outline: none;
+                    border: none;
+				}
+			}
+		}
+	}
+	& > div {
+		&:nth-child(3){
+			/* height: 50px; */
+			background-color: transparent;
+            color: white;            			
+			/* border-color: none!important; */
+			box-shadow: unset;
+			border: 0;
+			/* @include respond('laptop') {
+				 height: 2.5rem;
+			} */            
+            &:focus{
+               
+               
+            }
+		}
+		&:nth-child(4){			
+			/* min-width: 150px; */  
+			
+			overflow: hidden;			     
+		}
+		& > div{            
+			&:first-child{          
+				div{
+					/* &:first-child{} */
+					color: #000;   
+					/* font-size: 14px; */
+                    /* line-height: 1.75rem; */
+					/* color: #000; */
+					/* background-color: rgb(34 ,34 ,34, 0.1); */
+                    /* color: #000; */
+					/* background-color: transparent; */
+                    
+				}
+			}
+			&:nth-child(2){                
+				& > span{
+					display: none;
+				}
+			}
+		}
+	}
+	
+}
+
+.custom-react-select-2 {	
+	& > div:nth-child(4){        
+        & > div{            
+            background-color: #fff;           
+			& > div{
+				background-color: #fff;
+                color: #000;
+				cursor: pointer;
+				/* @include transitionMedium; */
+				&:hover{
+					background-color: var(--primary);
+					color: #fff;
+                    font-size: 14px;
+				}
+				
+			}
+		}
+	}
+	& > div {
+		&:nth-child(3){
+			height: 50px;
+			/* background-color: transparent; */            
+			border:1px solid #e8e8e8!important;
+			box-shadow: unset;
+			border-radius: 5px;
+            /* border: none; */
+			
+			/* @include respond('laptop') {
+				 height: 2.5rem;
+			} */            
+            &:focus{
+                outline: none;
+                border: none;
+            }
+		}
+		&:nth-child(4){			
+			/* min-width: 150px; */  
+			overflow: hidden;			     
+		}
+		& > div{            
+			&:first-child{             
+				div{
+					font-size: 15px;
+                    line-height: 1.8;
+					padding-left: 10px;
+					/* color: #000; */
+                    /* color: #fff; */
+                    
+				}
+			}
+			&:nth-child(2){                
+				& > span{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.date-picker-inp .react-datepicker-wrapper .react-datepicker__input-container input{
+	background: transparent;
+	border: none;
+	padding: 0;
+	color: white;
+	margin-bottom: 6px;
+}
+.date-picker-inp .react-datepicker-wrapper .react-datepicker__input-container input::placeholder{
+	color: white;
+	font-size: 1.125rem;
+}
+.date-picker-inp .react-datepicker__header{
+	background-color: white;
+	border-bottom: none;
+}
+.date-picker-inp .react-datepicker__day--selected{
+	background-color: var(--primary);
+}
