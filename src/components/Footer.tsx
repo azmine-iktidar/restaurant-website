@@ -205,15 +205,7 @@ const Footer = () => {
               </div>
               <div className="md:w-1/2 w-full md:text-right text-center px-[15px] md:mt-0 mt-[15px]">
                 <span className="text-sm text-[#999999]">
-                  Crafted With{" "}
-                  <span
-                    className="bg-heart w-[60px] h-[60px] inline-block my-[-25px] mx-[-18px] heart"
-                    ref={heartRef}
-                    onClick={() => {
-                      heartRef.current?.classList.toggle("heart-blast");
-                    }}
-                  ></span>{" "}
-                  by{" "}
+                  Crafted With ❤️ by{" "}
                   <Link
                     to="https://www.fiverr.com/azmineiktidar"
                     target="_blank"
