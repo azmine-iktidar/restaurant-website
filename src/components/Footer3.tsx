@@ -6,7 +6,7 @@ import { FormEvent, useRef, useState } from "react";
 
 const Footer3 = () => {
   const year = new Date().getFullYear();
-  const heartRef = useRef<HTMLSpanElement | null>(null);
+
   const [input, setInput] = useState<string>("");
   const form = useRef<HTMLFormElement | null>(null);
   const sendEmail = (e: FormEvent) => {

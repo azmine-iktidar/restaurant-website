@@ -1,9 +1,7 @@
-import { useRef } from "react";
 import { IMAGES } from "../constent/theme";
 import { Link } from "react-router-dom";
 
 const Footer4 = () => {
-  const heartRef = useRef<HTMLSpanElement | null>(null);
   return (
     <footer className="site-footer style-1 bg-black2 relative" id="footer">
       <div className="xl:pt-[85px] md:pt-[80px] pt-[60px] lg:pb-10 md:pb-5 pb-0 relative z-[2]">

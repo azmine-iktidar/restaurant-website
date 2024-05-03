@@ -7,7 +7,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { FormEvent, useRef, useState } from "react";
 
 const ComingSoon = () => {
-  let year = new Date().getFullYear();
+  const year = new Date().getFullYear();
   const [input, setInput] = useState<string>("");
   const form = useRef<HTMLFormElement | null>(null);
   const heartRef = useRef<HTMLSpanElement | null>(null);

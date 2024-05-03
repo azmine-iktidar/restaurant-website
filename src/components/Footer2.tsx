@@ -6,7 +6,6 @@ import { FormEvent, useRef, useState } from "react";
 import Particls from "./Particls";
 
 const Footer2 = () => {
-  const heartRef = useRef<HTMLSpanElement | null>(null);
   const [input, setInput] = useState<string>("");
   const form = useRef<HTMLFormElement | null>(null);
   const sendEmail = (e: FormEvent) => {
