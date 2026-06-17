@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Swigo — Restaurant Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page restaurant and food-ordering website template ("Swigo") built with React, TypeScript, and Vite. It ships with a large set of prebuilt pages — multiple home layouts, menus, shop/cart/checkout, blog, team, services, testimonials, and more — wired together with client-side routing.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React 18](https://react.dev) with TypeScript
+- [Vite](https://vitejs.dev) for development and bundling
+- [React Router](https://reactrouter.com) for client-side routing
+- [Tailwind CSS](https://tailwindcss.com) alongside extensive custom CSS
+- UI/UX libraries: [Swiper](https://swiperjs.com), `lightgallery`, `react-modal-video`, `react-datepicker`, `react-select`, `nouislider-react`, `react-responsive-masonry`, `react-simple-star-rating`, `react-lottie-player`
+- `react-hot-toast` for notifications and [EmailJS](https://www.emailjs.com) for contact forms
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Several home page variants and inner pages (About, FAQ, Team, Services, Testimonials)
+- Menu pages in multiple styles
+- Shop flow: product listings, product detail, cart, wishlist, and checkout
+- Blog grids and detail pages
+- Utility pages: 404, Coming Soon, Under Maintenance
+- Image galleries, sliders/carousels, video modals, and date pickers
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Prerequisites
+
+- Node.js (LTS) and a package manager (npm, pnpm, or yarn)
+
+### Install and run
+
+```bash
+npm install
+npm run dev      # start the Vite dev server
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Other scripts
+
+```bash
+npm run build    # type-check (tsc) and build for production
+npm run preview  # preview the production build locally
+npm run lint     # lint TypeScript/TSX files
+```
+
+## Project Structure
+
+```
+src/
+  App.tsx        Router setup and page mapping
+  pages/         All page components (home variants, menu, shop, blog, etc.)
+  assets/        CSS (base, components, layout, pages, theme), icons, fonts
+```
